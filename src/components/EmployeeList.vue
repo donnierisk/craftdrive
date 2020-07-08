@@ -17,7 +17,7 @@ import { Employee } from "@/models/Employee";
 export default class EmployeeList extends Vue {
   @Prop() private employees!: Employee[];
 
-  employeeClick(employeeId: number) {
+  private employeeClick(employeeId: number) {
     this.$emit("employee-click", employeeId);
   }
 }

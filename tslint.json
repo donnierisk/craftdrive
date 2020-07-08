@@ -9,6 +9,7 @@
     ]
   },
   "rules": {
+    "arrow-parens": false,
     "indent": [
       true,
       "spaces",

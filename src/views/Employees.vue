@@ -23,11 +23,11 @@ import { Employee } from "../models/Employee";
   }
 })
 export default class Employees extends Vue {
-  isListView = true;
-  employees: Employee[] = [];
-  selectedEmployee: Employee | undefined = {};
+  private isListView = true;
+  private employees: Employee[] = [];
+  private selectedEmployee: Employee | undefined = {};
 
-  created() {
+  private created() {
     EmployeeService.getEmployees().then(employees => {
       this.employees = employees;
     });
