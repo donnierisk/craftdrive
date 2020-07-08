@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="isListView">
+    <div v-if="isListView" id="list-view">
       <employee-list :employees="employees" @employee-click="handleEmployeeClick" />
     </div>
-    <div v-else>
+    <div v-else id="single-view">
       <employee-single :employee="selectedEmployee" @back-to-list="isListView = true" />
     </div>
   </div>
