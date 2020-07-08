@@ -1,5 +1,17 @@
 # craftdrive
 
+## Docker
+
+Build docker image:
+```
+docker build -t vuejs/craftdrive .
+```
+
+Run docker image:
+```
+docker run --rm -d  -p 8080:8080/tcp vuejs/craftdrive:latest
+```
+
 ## Project setup
 ```
 yarn
@@ -19,6 +31,11 @@ yarn build
 ### Lints and fixes files
 ```
 yarn lint
+```
+
+### Testing of components
+```
+yarn test
 ```
 
 ### Customize configuration
